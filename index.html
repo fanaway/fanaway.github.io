@@ -2,66 +2,112 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
+        <title>Project: Event invite</title>
         <style>
-        body{
-            background-color: rgb(199, 220, 255);
+        #content{
+            width: 500px;
+            margin:auto;
         }
-        h1{
-            background-color:rgb(255,255,255);
-            color: rgb(199,220,255);
-            text-align: center;
-            margin-left:-8px;
-        }
-            .post {
-                font-family:cursive;
-                font-size: 15px;
-                line-height: 18px;
-                background-color: rgb(224, 236, 255);
+            h6{
+                text-align: center;
+                background-color:rgb(217, 213, 217);
+                padding:6px;
+                position:fixed;
+                width:500px;
+                z-index:1;
             }
-            .title{
-                color: rgb(24, 8, 87);
-                font-family: monospace;
+            h1{
+                font-size:900%;
+                margin:0px;
+                font-family: Jazz LET, fantasy;
+                text-align: center;
+                position:relative;
+                top:30px;
             }
-            .date{
-                text-decoration: underline;
-                line-height: 0px;
+            #m{
+                color:rgb(53, 216, 252);
             }
-            .quote{
-                font-style: italic;
-                color: rgb(49, 49, 79);
-                line-height: 0px;
+            #i{
+                color:rgb(51, 255, 102);
             }
-            .origin{
-                font-weight: bold;
-                text-align:center;
-                font-size: 0.8em ;
+            #l{
+                color: rgb(240, 105, 130);
+            }
+            #o{
+                color:rgb(156, 194, 255);
+            }
+            #about{
+                height: 150px;
+                padding-top: 30px;
+            }
+            #water{
+                background-color: rgb(186, 242, 255);
+                padding: 10px;
+            }
+            #air{
+                background-color:rgb(222, 234, 255);
+                padding: 10px;
+                height: 78px;
+                padding-top: 20px;
+            }
+            #fire{
+                background-color: rgb(247, 207, 214);
+                padding: 49px;
+                height: 67px;
+            }
+            #earth{
+                background-color: rgb(156, 247, 179);
+                padding: 10px;
+            }
+            #contact{
+                background-color: rgb(217, 213, 217);
+            }
+            a{
+                color: black;
+            }
+            .picture{
+                float:left;
+                margin-right:13px;
+            }
+            #hopper-picture{
+                margin-top:10px;
+            }
+            #water-picture{
+                margin-top:2px;
+            }
+            #air-picture{
+                margin-top: 17px;
+                margin-left:11px;
+            }
+            #fire-picture{
+                margin-top: 16px;
+                margin-left: 11px;
+            }
+            #earth-picture{
+                margin-top:12px;
+                margin-left:11px;
             }
         </style>
     </head>
     <body>
+    <div id="content">
+        <h6> Milo's Birthday Party --- <a href="#about">  About</a> --- <a href="#water"> Water</a> <a href="#air"> Air</a> <a href="#fire"> Fire</a> <a href="#earth"> Earth</a></h6>
         
-        <h1>Talia's blog</h1>
-
-        <h3>Contents</h3>
-        <ul>
-            <li><a href="#first-post">First post!</a></li>
-            <li><a href="#second-post">Second post!</a></li>
-        </ul>
+        <h1><span id="m">M</span><span id="i">I</span><span id="l">L</span><span id="o">O</span></h1>
+        <img class="picture" id="hopper-picture" src="https://www.kasandbox.org/programming-images/seasonal/hopper-partying.png" alt="partying hopper" width= "100">
+        <p id="about">About <br> You are invited to Milo's 11th birthday party. <br> Where? 4 Privet Drive, Little Whinging <br> When? October 2nd 4 PM. <br> Who? you, of course.</p>
         
-       
-        <h2 id="first-post" class="title">First post</h2>
-        <h6 class="date">4.2.2020</h6>
+        <p id="water"><img class="picture" id="water-picture" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Water_drop_001.jpg" alt="water droplet" width= "100"> Water<br> WE ARE HAVING A WATER FIGHT!! <br> Make ure you bring a change of clothing so yours does not get too wet and messy.</p>
         
-        <p class="post">Hey, this is talia. how are yall doing. a litle about my self: im 19 a student for education and jewish studies. now self-quarantined / social distancingcuz there is a pandemic in the world, ya weird, never thought ill be at this state but thats bio... hope you are readign this in a better time... or not:) </p>
-        <p class="quote">"What a year this week has been."</p><p class="origin">-Mark H. Bickel.</p>
+        <img class="picture" id="air-picture" src="https://upload.wikimedia.org/wikipedia/commons/5/55/A_close_shot_of_wind_turbines_wind_farm.jpg" alt="wind turbines" width="100">
+        <p id="air"> Air<br> We will be playing many balloon games from Hula Hoop Ring Toss to Balloon Dart. Prepare to have a blast! </p>
+        <img class="picture" id="fire-picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Et_baal.jpg/280px-Et_baal.jpg" alt="bonfire" width="100">
+        <p id="fire"> Fire<br> Ready to have blazing hot HOT DOGS?? We are planig to have the best BBQ ever. Note: if you have any diatarry ristrictions please <a href="#contact">contact</a> us:)</p>
+        <img class="picture" id="earth-picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Har_%27Arif_Makhtesh_041014.jpg/1200px-Har_%27Arif_Makhtesh_041014.jpg" alt="picture of mountain land scape" width="100">
+        <p id="earth"> Earth<br> "Let the eat CAKE"! Prepare for the most epic dirt cake making. No one will leave with out a piece in there hands.</p>
         
-        
-         <h2 id="second-post" class="title">Second post actuane</h2>
-        <h6 class="date">4.2.2020</h6>
-        
-        <p class="post">Hello again. im on mounth two-ish of acutane fisrt week or two was fine- no side effects. from about week two my lips became <strong>very</strong> dry:( and then after a.d. said skin becomes more senstive i noticed that the next week. first wk-ish skin was quite clear but since all is down hill. mayb cuz medicine or cuz i touch my face or do <strong>not</strong> eat well since leaving school. i have forgoten to take a few times but now i set an alarm that really help. see you later. will hope for de best:)</p>
-        <p class="quote">"I regret taking such good care of my skin."</p><p class="origin">-Said no one ever.</p>
-        
+        <p id="contact">Please contact us at: phone: 914-786-1842 or e-mail: annabethchase@aol.com</p>
+      </div>  
     </body>
 </html>
+
